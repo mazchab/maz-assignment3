@@ -1,5 +1,8 @@
-$(".btn").click(function(){
-    $(".input").toggleClass("active").focus;
-    $(this).toggleClass("animate");
-    $(".input").val("");
-    });
+$('#iconified').on('keyup', function() {
+    var input = $(this);
+    if(input.val().length === 0) {
+        input.addClass('empty');
+    } else {
+        input.removeClass('empty');
+    }
+});

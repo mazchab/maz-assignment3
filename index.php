@@ -23,40 +23,23 @@
         <!-- Font Awesome & Google Fonts-->
         <script src="https://kit.fontawesome.com/416b391c4f.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
-            <div class="container" style="padding-top:200px; display:inline-block">
 
-                    <!-- CK: HAVE THE FORM RELOAD WITH THE PROVIDED PARAMETER -->
-            
-                    <form action="">
-                        <div class="form-group my-5">
-                            <div class="row">
-                                <div class="input-group mb-3">
-            
-                                    <!-- CK: DEFINING SEARCH PARAMETER NAME -->
-            
-                                    <div class="wrapper">
-                                        <div class="search-box">
-                                            <input type="text" class="input" name="s" id="search" placeholder="search">
+        <div class="container-fluid my-3" style="width:100%">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" name="s" id="search" placeholder=">">
+                </div> 
+            </form>
+        </div> 
+
+        <div class="col-12" style="padding-top:10px">
+            <? include "results.php" ?>                          
+        </div>                              
                                     
-                                        <div class="btn">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </div>
-                                    
-            
-                                </div>
-                            </div>  
-                        </div>
-                    </form>
-            
-                    <!-- CK: INCLUDING A NEW FILE FOR MODULARITY -->
-                    <div class="col-6">
-                    <? include "results.php" ?>
-                    </div>
-            </div>
+
 
 	</body>
 </html>
