@@ -26,8 +26,8 @@
     </head>
     
     <body>
-        <div class="container-fluid" style="justify-content:center; text-align:center; align-items:center;">
-            <div><img src="logo.svg" style="width:4%; padding-top:50px"></div>
+        <div class="container-fluid" style="justify-content:center; text-align:center; align-items:center; margin-top:45px">
+            <div><img src="logo.svg" style="width:4%"></div>
         </div>
         <div class="container-fluid" style="padding-top:80px; display:inline-block">
             <div class="row">
@@ -59,7 +59,9 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="text-align:center; align-items:center; position:absolute; bottom:0">
+
+        
+        <div class="container-fluid" style="text-align:center; align-items:center; position:absolute; bottom:5px">
         <div class="triangle-down"></div>
         </div>
 

@@ -28,7 +28,7 @@ p {
   padding-top:30px;
 }
 
-input[type=text] {
+input[name=s] {
     width: 57px;
     height:57px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -41,8 +41,16 @@ input[type=text] {
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+input[name=s]:focus {
   width: 100%;
+}
+
+input[id=formGroupExampleInput3]:focus {
+  height:120px;
+}
+
+input[id=formGroupExampleInput6]:focus {
+  height:120px;
 }
 
 .triangle-up {
