@@ -4,6 +4,15 @@
   user-select: none;
 }
 
+html {
+  overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
 body {
     width:100%;
     height:100%;
@@ -12,19 +21,19 @@ body {
     background-size:cover;
     /* display:flex; */
     background-repeat:no-repeat;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
     color:white;
 }
 
 h4 {
   font-size: 10px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
   color:white;
 }
 
 p {
   color:white;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
   padding-top:30px;
 }
 
@@ -36,13 +45,16 @@ input[name=s] {
     background-color:white;
     border:none;
     border-radius:50px;
-    text-indent:15px;
+    text-indent:24px;
     z-index:1;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:20px;
 }
 
 /* When the input field gets focus, change its width to 100% */
 input[name=s]:focus {
   width: 100%;
+  font-family: 'Noto Sans HK', sans-serif;
 }
 
 input[id=formGroupExampleInput3]:focus {
@@ -56,17 +68,60 @@ input[id=formGroupExampleInput6]:focus {
 .triangle-up {
 	width: 0;
 	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-  border-bottom: 20px solid white;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
   display:initial;
 }
 
 .triangle-down {
 	width: 0;
 	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-  border-top: 20px solid white;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+  border-top: 15px solid white;
   display:initial;
 }
+
+
+/*
+ * Keyframes
+ */
+
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+

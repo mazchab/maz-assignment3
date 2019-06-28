@@ -45,10 +45,10 @@
             ?>
 
             <!-- IDENTIFY THE RESPONSE STRUCTURE AND OUTPUT USING FOREACH LOOP -->
-
+ 
             <? foreach ($result as $item) { ?>
                     <div class="col-6">
-                    <div class="p-4 border-bottom mb-4 bg" style="width:auto; background-color:white; border-radius:30px; color:grey">
+                    <div class="p-4 border-bottom mb-4" style="background-color:white; border-radius:30px; color:grey; padding-right:50px; padding-top:200px;">
 
                         <?
 
@@ -60,7 +60,7 @@
 
                         ?>
                         
-                            <div style="font-family:'Bree Serif'"><?= $item->shortdef[0] ?></div>
+                            <div style="font-family: 'Titillium Web', sans-serif"><?= $item->shortdef[0] ?></div>
                         
                     
                     </div>
