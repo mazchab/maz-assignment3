@@ -57,14 +57,6 @@ input[name=s]:focus {
   font-family: 'Noto Sans HK', sans-serif;
 }
 
-input[id=formGroupExampleInput3]:focus {
-  height:120px;
-}
-
-input[id=formGroupExampleInput6]:focus {
-  height:120px;
-}
-
 .triangle-up {
 	width: 0;
 	height: 0;

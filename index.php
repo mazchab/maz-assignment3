@@ -31,9 +31,7 @@
 
                                 <div>
                                     <h4><strong style="font-size:32px; font-family: 'Titillium Web', sans-serif">Introduction</strong></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </p>
+                                    <p>Tired of reading through your lab results while not understanding what they are and what they mean to your body? The waiting period between receiving your results and getting a follow up appointment with your doctor can be stressful and and confusing. Lapp is a lab web application mashup that helps users undertand the biochemistry of their body by providing a simple definition of each molecule and it's building blocks. </p>
                                 </div>
 
                             </div>
@@ -43,9 +41,7 @@
                             
                                 <div>
                                     <h4><strong style="font-size:32px; font-family: 'Titillium Web', sans-serif">How it works</strong></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </p>
+                                    <p>Simple type the name of the molecule you want to search for, while this app is built for medical context, it can however, track any molecule and provide a simple and coherent definition. So, get your medical lab results and start typing!  </p>
                                 </div>
                                 
                             </div>
@@ -55,9 +51,7 @@
 
                                 <div>
                                     <h4><strong style="font-size:32px; font-family: 'Titillium Web', sans-serif">Future ideas!</strong></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed </p>
+                                    <p>Currently, this app provides reliable definitions of the molecules. However, future iterations will also include visual illustrations and vector drawings of each molecule. This will be helpful to understand the complexity of each molecule and the components that this molecule reacts or does not reach with.</p>
                                 </div>
                                 
                             </div>
@@ -89,15 +83,23 @@
                         </div> 
                     </form>
                 </div> 
+                <div class="container-fluid">
 
-                <div class="col-12" style="padding-top:100px">
-                    <? include "results.php" ?>                          
-                </div>                              
+                <div class="row">
 
-                <!-- <div class="container-fluid" style="text-align:center; align-items:center; position:fixed; bottom:5px">
-                    <a style="display:block; float:bottom" href="contact.php"><div class="triangle-down"></div></a>
-                </div> -->
+                    <div class="col-12" style="padding-top:100px">
 
+                        <? include "results.php" ?>                      
+
+                    </div>         
+                    
+                    
+
+                    <!-- <div class="container-fluid" style="text-align:center; align-items:center; position:fixed; bottom:5px">
+                        <a style="display:block; float:bottom" href="contact.php"><div class="triangle-down"></div></a>
+                    </div> -->
+                </div>
+                </div>
 
             </div>
 
@@ -131,21 +133,21 @@
 
                                     <p><strong>Email</strong></p>
 
-                                    <form>
+                                    <form action="sendemail.php" method="post" enctype="text/plain">
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                                            <input type="text" class="form-control" id="first_name" placeholder="Name">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email address">
+                                            <input type="text" class="form-control" id="email_address" placeholder="Email address">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Message...">
+                                            <textarea type="text" class="form-control" id="formGroupExampleInput3" placeholder="Message..."></textarea>
                                         </div>
 
-                                        <button type="submit" id="emailSubmit" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:grey">Send</button>
+                                        <button type="submit" id="emailSubmit" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:white">Send</button>
 
                                     </form>
 
@@ -157,7 +159,7 @@
                                 <div>
                                     <p><strong>SMS</strong></p>
 
-                                    <form>
+                                    <form action="send.php" method="post" enctype="text/plain">
 
                                         <div class="form-group">
                                             <input type="text" class="form-control" name="smsName" id="formGroupExampleInput4" value="<?php echo $name; ?>" placeholder="Name">
@@ -168,10 +170,10 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" method="post" name="smsMessage" id="formGroupExampleInput6" placeholder="Message...">
+                                            <textarea type="text" class="form-control" method="post" name="smsMessage" id="formGroupExampleInput6" placeholder="Message..."></textarea>
                                         </div>
 
-                                        <a href="send.php" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:grey">Send</a>
+                                        <button type="submit" id="smsSubmit" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:white">Send</button>
 
                                     </form>
                                 </div>
@@ -203,7 +205,7 @@
         navigation: {
         'textColor': '#000',
         'bulletsColor': '#000',
-        'position': 'position(',
+        'position': 'bottom',
         'tooltips': ['Page 1', 'Page 2', 'Page 3']
         },
         

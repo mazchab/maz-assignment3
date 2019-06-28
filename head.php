@@ -29,35 +29,7 @@
         <script src="https://kit.fontawesome.com/416b391c4f.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Titillium+Web&display=swap" rel="stylesheet">
 
-        <script type="text/javascript">
-$(document).ready(function() {
-
-/*
-* Plugin intialization
-*/
-
-$('#pagepiling').pagepiling({
-    menu: '#menu',
-    anchors: ['section1', 'section2'],
-    sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
-    navigation: {
-        'position': 'right',
-        'tooltips': ['Page 1', 'Page 2']
-    },
-    afterRender: function(){
-        $('#pp-nav').addClass('custom');
-    },
-    afterLoad: function(anchorLink, index){
-        if(index>1){
-            $('#pp-nav').removeClass('custom');
-        }else{
-            $('#pp-nav').addClass('custom');
-        }
-    }
-});
-
-});
-         </script>
+ 
 
 
 
