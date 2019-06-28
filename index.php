@@ -77,7 +77,7 @@
                 </div> -->
 
                 <div class="container-fluid" style="width:100%; margin-top:20px">
-                    <form action="">
+                    <form action="results.php">
                         <div class="input-group">
                             <input type="text" name="s" id="search" placeholder=">" style="font-family:'Noto Sans HK', sans-serif; position:fixed">
                         </div> 
@@ -133,18 +133,18 @@
 
                                     <p><strong>Email</strong></p>
 
-                                    <form action="sendemail.php" method="post" enctype="text/plain">
+                                    <form action="mailto:mazin.pub@gmail.com" method="post" enctype="text/plain">
 
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="first_name" placeholder="Name">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="email_address" placeholder="Email address">
+                                            <input type="text" class="form-control" name="subject" id="email_address" placeholder="Email address">
                                         </div>
 
                                         <div class="form-group">
-                                            <textarea type="text" class="form-control" id="formGroupExampleInput3" placeholder="Message..."></textarea>
+                                            <textarea type="text" class="form-control" name="body" id="formGroupExampleInput3" placeholder="Message..."></textarea>
                                         </div>
 
                                         <button type="submit" id="emailSubmit" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:white">Send</button>
@@ -162,15 +162,15 @@
                                     <form action="send.php" method="post" enctype="text/plain">
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="smsName" id="formGroupExampleInput4" value="<?php echo $name; ?>" placeholder="Name">
+                                            <input type="text" class="form-control" name="smsName" id="formGroupExampleInput4" placeholder="Name">
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="smsNumber" id="formGroupExampleInput5" value="<?php echo $name; ?>" placeholder="Phone number">
+                                            <input type="text" class="form-control" name="smsNumber" id="formGroupExampleInput5" placeholder="Phone number">
                                         </div>
 
                                         <div class="form-group">
-                                            <textarea type="text" class="form-control" method="post" name="smsMessage" id="formGroupExampleInput6" placeholder="Message..."></textarea>
+                                            <textarea type="text" class="form-control" name="smsMessage" id="formGroupExampleInput6" placeholder="Message..."></textarea>
                                         </div>
 
                                         <button type="submit" id="smsSubmit" class="btn btn-light" style="background-color:rgb(150, 216, 35); border:0; color:white">Send</button>

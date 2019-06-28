@@ -59,7 +59,7 @@
                 <? } ?>
         </div>
 
-        
+        <div class="col-6" style="text-align:center"><img src="glucose.svg" style="width:75%"></div>
 
     </div>
 </div>
