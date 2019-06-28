@@ -1,7 +1,5 @@
 <html>
 	<head>
-        <title>Untitled</title>
-
         <? include "head.php" ?>
 	</head>
 

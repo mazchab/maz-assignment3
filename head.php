@@ -1,6 +1,6 @@
 
 
-<title>Untitled</title>
+<title>Lapp!</title>
 
         <!-- Internal Stylesheet -->
         <link rel="stylesheet" href="styles.css">
@@ -23,27 +23,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
         
 
-
-
         <!-- Font Awesome & Google Fonts-->
         <script src="https://kit.fontawesome.com/416b391c4f.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Titillium+Web&display=swap" rel="stylesheet">
-
- 
-
-
-
-<script type="text/javascript">
-// 	 var myFullpage = new fullpage('#fullpage', {
-//       anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-//       menu: '#menu',
-//       continuousVertical: true,
-//       afterLoad: function(anchorLink, index){
-//             console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
-//         },
-//         onLeave: function(index, nextIndex, direction){
-//             console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
-
-//         },
-//     });
-</script>
